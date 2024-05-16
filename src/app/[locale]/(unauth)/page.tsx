@@ -1,99 +1,61 @@
-import { getTranslations } from 'next-intl/server';
-
-import { Sponsors } from '@/components/Sponsors';
-
-export async function generateMetadata(props: { params: { locale: string } }) {
-  const t = await getTranslations({
-    locale: props.params.locale,
-    namespace: 'Index',
-  });
-
-  return {
-    title: t('meta_title'),
-    description: t('meta_description'),
-  };
-}
-
 export default function Index() {
   return (
-    <>
-      <p>
-        Explore our GitHub project for more information about{' '}
-        <a
-          className="text-blue-700 hover:border-b-2 hover:border-blue-700"
-          href="https://github.com/ixartz/Next-js-Boilerplate"
-        >
-          Next.js Boilerplate
-        </a>
-        .
-      </p>
-      <p>
-        Follow{' '}
-        <a
-          className="text-blue-700 hover:border-b-2 hover:border-blue-700"
-          href="https://twitter.com/ixartz"
-          target="_blank"
-        >
-          @Ixartz on Twitter
-        </a>{' '}
-        for updates and more information about the boilerplate.
-      </p>
-      <p>
-        Our sponsors&apos; exceptional support has made this project possible.
-        Their services integrate seamlessly with the boilerplate, and we
-        recommend trying them out.
-      </p>
-      <h2 className="mt-5 text-2xl font-bold">Sponsors</h2>
-      <Sponsors />
-      <h2 className="mt-5 text-2xl font-bold">
-        Boilerplate Code for Your Next.js Project with Tailwind CSS
-      </h2>
-      <p className="text-base">
-        <span role="img" aria-label="rocket">
-          🚀
-        </span>{' '}
-        Next.js Boilerplate is a developer-friendly starter code for Next.js
-        projects, built with Tailwind CSS, and TypeScript.{' '}
-        <span role="img" aria-label="zap">
-          ⚡️
-        </span>{' '}
-        Made with developer experience first: Next.js, TypeScript, ESLint,
-        Prettier, Husky, Lint-Staged, Jest, Testing Library, Commitlint, VSCode,
-        PostCSS, Tailwind CSS, Authentication with{' '}
-        <a
-          className="text-blue-700 hover:border-b-2 hover:border-blue-700"
-          href="https://clerk.com?utm_source=github&amp;utm_medium=sponsorship&amp;utm_campaign=nextjs-boilerplate"
-          target="_blank"
-        >
-          Clerk
-        </a>
-        , Database with DrizzleORM (SQLite, PostgreSQL, and MySQL) and{' '}
-        <a
-          className="text-blue-700 hover:border-b-2 hover:border-blue-700"
-          href="https://turso.tech/?utm_source=nextjsstarterbp"
-          target="_blank"
-        >
-          Turso
-        </a>
-        , Error Monitoring with{' '}
-        <a
-          className="text-blue-700 hover:border-b-2 hover:border-blue-700"
-          href="https://sentry.io/for/nextjs/?utm_source=github&amp;utm_medium=paid-community&amp;utm_campaign=general-fy25q1-nextjs&amp;utm_content=github-banner-nextjsboilerplate-logo"
-          target="_blank"
-        >
-          Sentry
-        </a>
-        , Logging with Pino.js and Log Management with{' '}
-        <a
-          className="text-blue-700 hover:border-b-2 hover:border-blue-700"
-          href="https://betterstack.com/?utm_source=github&amp;utm_medium=sponsorship&amp;utm_campaign=next-js-boilerplate"
-          target="_blank"
-        >
-          Better Stack
-        </a>
-        , Monitoring as Code with Checkly, Storybook, Multi-language (i18n), and
-        more.
-      </p>
-    </>
+    <div className="container mx-auto mt-8">
+      <div className="text-center">
+        <h1 className="mb-4 text-3xl font-bold">Mei Yiqing</h1>
+        <p className="text-lg">18190746675丨yiqing.mei.life@gmail.com</p>
+      </div>
+      <div className="mt-8">
+        <h2 className="mb-4 text-2xl font-bold">Education</h2>
+        <p className="mb-2">Chengdu Neusoft University</p>
+        <p className="mb-2">Information Management and Information Systems</p>
+        <p className="mb-2">September 2021 - Present</p>
+        <ul className="mb-4 list-inside list-disc">
+          <li>GPA: 3.2</li>
+          <li>
+            Relevant Courses: Fundamentals of Programming (Java), Principles and
+            Applications of Databases, Web Database Programming, Mobile
+            Programming Development, Information Statistics, ERP Management and
+            Design
+          </li>
+        </ul>
+      </div>
+      <div className="mt-8">
+        <h2 className="mb-4 text-2xl font-bold">Skills</h2>
+        <ul className="list-inside list-disc">
+          <li>
+            Proficient in Java programming language, MySQL database, and
+            computer networking concepts including TCP/IP, HTTP protocols.
+          </li>
+          <li>
+            Experienced with Spring Boot, Spring MVC, Mybatis, Node.js
+            frameworks such as React, Next.js, and TypeScript for building
+            efficient backend applications.
+          </li>
+          <li>
+            Familiar with NoSQL databases like Redis, MongoDB, and design
+            patterns such as Singleton, Factory, Strategy.
+          </li>
+          <li>
+            Capable of frontend development with HTML, CSS, JavaScript, and
+            frameworks like React, Vue.js, along with implementing
+            frontend-backend data interaction using Ajax, Restful API.
+          </li>
+          <li>
+            Knowledgeable in distributed technologies including Kafka, Nacos,
+            Elasticsearch, Zookeeper, and experienced in building microservices
+            applications with Spring Cloud framework.
+          </li>
+          <li>
+            Skilled in security practices such as SQL injection prevention,
+            encryption algorithms, and basic performance testing with JMeter.
+          </li>
+          <li>
+            Proficient in using development tools like IDEA, Maven, Vscode, Git
+            for team collaboration and version control.
+          </li>
+        </ul>
+      </div>
+    </div>
   );
 }
