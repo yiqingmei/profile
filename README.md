@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Boilerplate and Starter for Next.js 14+, Tailwind CSS 3.4, and TypeScript.
 
 <p align="center">
@@ -520,3 +521,6 @@ See [LICENSE](LICENSE) for more information.
 Made with ♥ by [CreativeDesignsGuru](https://creativedesignsguru.com) [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40Ixartz)](https://twitter.com/ixartz)
 
 [![Sponsor Next JS Boilerplate](https://cdn.buymeacoffee.com/buttons/default-red.png)](https://github.com/sponsors/ixartz)
+=======
+# profile
+>>>>>>> 7600e8332d55c920e5837a35b74e4ada1c1294e5
