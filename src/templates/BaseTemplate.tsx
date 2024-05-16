@@ -10,15 +10,19 @@ const BaseTemplate = (props: {
   const t = useTranslations('BaseTemplate');
 
   return (
-    <div className="min-h-screen w-full bg-slate-50">
-      <header className="border-b border-gray-200  bg-transparent ">
+    <div>
+      <header className="flex flex-col items-center justify-center">
         <div className="flex items-center justify-between py-4">
           <nav className="hidden md:block">
-            <ul className="flex flex-wrap gap-x-5 text-xl">{props.leftNav}</ul>
+            <ul className="flex flex-wrap gap-x-8 text-xl text-white">
+              {props.leftNav}
+            </ul>
           </nav>
 
           <nav className="hidden md:block">
-            <ul className="flex flex-wrap gap-x-5 text-xl">{props.rightNav}</ul>
+            <ul className="ml-8 flex flex-wrap gap-x-6 text-xl">
+              {props.rightNav}
+            </ul>
           </nav>
         </div>
       </header>

@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+// import Image from 'next/image';
+// import Link from 'next/link';
+// import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata(props: { params: { locale: string } }) {
@@ -16,56 +16,64 @@ export async function generateMetadata(props: { params: { locale: string } }) {
 }
 
 const Portfolio = () => {
-  const t = useTranslations('Portfolio');
-
   return (
-    <>
-      <p>{t('presentation')}</p>
-
-      <div className="grid grid-cols-1 justify-items-start gap-3 md:grid-cols-2 xl:grid-cols-3">
-        {Array.from(Array(6).keys()).map((elt) => (
-          <Link
-            className="hover:text-blue-700"
-            key={elt}
-            href={`/portfolio/${elt}`}
-          >
-            {t('portfolio_name', { name: elt })}
-          </Link>
-        ))}
+    <div className="container mx-auto mt-8">
+      <div className="text-center">
+        <h1 className="mb-4 text-3xl font-bold">Mei Yiqing</h1>
+        <p className="text-lg">18190746675丨yiqing.mei.life@gmail.com</p>
       </div>
-
-      <div className="mt-5 text-center text-sm">
-        {`${t('error_reporting_powered_by')} `}
-        <a
-          className="text-blue-700 hover:border-b-2 hover:border-blue-700"
-          href="https://sentry.io/for/nextjs/?utm_source=github&utm_medium=paid-community&utm_campaign=general-fy25q1-nextjs&utm_content=github-banner-nextjsboilerplate-logo"
-          target="_blank"
-        >
-          Sentry
-        </a>{' '}
-        - {`${t('coverage_powered_by')} `}
-        <a
-          className="text-blue-700 hover:border-b-2 hover:border-blue-700"
-          href="https://about.codecov.io/codecov-free-trial/?utm_source=github&utm_medium=paid-community&utm_campaign=general-fy25q1-nextjs&utm_content=github-banner-nextjsboilerplate-logo"
-          target="_blank"
-        >
-          Codecov
-        </a>
+      <div className="mt-8">
+        <h2 className="mb-4 text-2xl font-bold">Education</h2>
+        <p className="mb-2">Chengdu Neusoft University</p>
+        <p className="mb-2">Information Management and Information Systems</p>
+        <p className="mb-2">September 2021 - Present</p>
+        <ul className="mb-4 list-inside list-disc">
+          <li>GPA: 3.2</li>
+          <li>
+            Relevant Courses: Fundamentals of Programming (Java), Principles and
+            Applications of Databases, Web Database Programming, Mobile
+            Programming Development, Information Statistics, ERP Management and
+            Design
+          </li>
+        </ul>
       </div>
-
-      <a
-        href="https://sentry.io/for/nextjs/?utm_source=github&utm_medium=paid-community&utm_campaign=general-fy25q1-nextjs&utm_content=github-banner-nextjsboilerplate-logo"
-        target="_blank"
-      >
-        <Image
-          className="mx-auto mt-2"
-          src="/assets/images/sentry-dark.png"
-          alt="Sentry"
-          width={130}
-          height={112}
-        />
-      </a>
-    </>
+      <div className="mt-8">
+        <h2 className="mb-4 text-2xl font-bold">Skills</h2>
+        <ul className="list-inside list-disc">
+          <li>
+            Proficient in Java programming language, MySQL database, and
+            computer networking concepts including TCP/IP, HTTP protocols.
+          </li>
+          <li>
+            Experienced with Spring Boot, Spring MVC, Mybatis, Node.js
+            frameworks such as React, Next.js, and TypeScript for building
+            efficient backend applications.
+          </li>
+          <li>
+            Familiar with NoSQL databases like Redis, MongoDB, and design
+            patterns such as Singleton, Factory, Strategy.
+          </li>
+          <li>
+            Capable of frontend development with HTML, CSS, JavaScript, and
+            frameworks like React, Vue.js, along with implementing
+            frontend-backend data interaction using Ajax, Restful API.
+          </li>
+          <li>
+            Knowledgeable in distributed technologies including Kafka, Nacos,
+            Elasticsearch, Zookeeper, and experienced in building microservices
+            applications with Spring Cloud framework.
+          </li>
+          <li>
+            Skilled in security practices such as SQL injection prevention,
+            encryption algorithms, and basic performance testing with JMeter.
+          </li>
+          <li>
+            Proficient in using development tools like IDEA, Maven, Vscode, Git
+            for team collaboration and version control.
+          </li>
+        </ul>
+      </div>
+    </div>
   );
 };
 
