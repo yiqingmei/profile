@@ -1,58 +1,3 @@
-<<<<<<< HEAD
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# Database
-*.db
-
-# testing
-/coverage
-
-# storybook
-storybook-static
-
-# playwright
-/test-results/
-/playwright-report/
-/playwright/.cache/
-
-# next.js
-/.next
-/out
-
-# cache
-.swc/
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-Thumbs.db
-
-# debug
-npm-debug.log*
-pnpm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# local env files
-.env*.local
-
-# local folder
-local
-
-# vercel
-.vercel
-
-# Sentry Config File
-.sentryclirc
-=======
 # Logs
 logs
 *.log
@@ -183,4 +128,3 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
->>>>>>> 7600e8332d55c920e5837a35b74e4ada1c1294e5
