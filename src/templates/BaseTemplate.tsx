@@ -11,16 +11,16 @@ const BaseTemplate = (props: {
 
   return (
     <div>
-      <header className="flex flex-col items-center justify-center">
+      <header className="flex flex-col  justify-center">
         <div className="flex items-center justify-between py-4">
           <nav className="hidden md:block">
-            <ul className="flex flex-wrap gap-x-8 text-xl text-white">
+            <ul className="flex flex-wrap gap-x-10 text-xl text-white">
               {props.leftNav}
             </ul>
           </nav>
 
-          <nav className="hidden md:block">
-            <ul className="ml-8 flex flex-wrap gap-x-6 text-xl">
+          <nav className="hidden  md:block">
+            <ul className="flex-wrap justify-end gap-x-6 text-xl">
               {props.rightNav}
             </ul>
           </nav>
